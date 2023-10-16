@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Pixelify+Sans&family=Poppins:wght@100&display=swap');
+:root {
+  --cool-font: 'Oswald', sans-serif;
+  --text-color: rgb(185, 185, 185);
+  --color: #e6007e;
+  --text-font: 'Pixelify Sans', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  color: var(--text-color);
+  font-family: var(--cool-font);
+}
+
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('https://t4.ftcdn.net/jpg/02/43/75/73/360_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg');
+}
+
+.form-container {
+  display: flex;
+}
+
+.form-container .form-image {
+  display: flex;
+  position: relative;
+  width: 75vw;
+  background: url('https://maciejmroz2002.github.io/sign-up-form/space-g1e38f8dc5_1920.jpg');
+  height: 100vh;
+  background-position: center;
+}
+
+.form-container .form-image .side-image {
+  height: 100vh;
+  width: 100%;
+}
+
+.form-container .logo-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 20vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px 0;
+}
+
+.form-container .logo-info img {
+  height: 100px;
+}
+
+.form-container .logo-info h1 {
+  font-family: var(--cool-font);
+  padding-left: 10px;
+}
+
+.form-container .form-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  padding: 2% 5%;
+}
+
+.form-container .form-image h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+}
+
+
+.form-disclaimer {
+  margin-top: 100px;
+}
+
+.form-disclaimer p {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 40px;
+  font-weight: bolder;
+}
+
+
+form.signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.signup-form div {
+  
+  background-color: rgb(15, 15, 15);
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 10px;
+}
+
+.signup-form h2 {
+  padding: 5px 0;
+  margin-left: 20px;
+}
+
+label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.fieldset {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.fieldsets {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+.fieldset label {
+  margin-top: 10px;
+}
+
+.fieldset input {
+  background: transparent;
+  border: 2px solid #333;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 3px;
+  color: var(--text-color);
+}
+
+
+.fieldset input:focus:invalid {
+  border: 2px solid var(--color);
+}
+
+.create-account-btn {
+  display: inline-block;
+  width: 20%;
+  margin-top: 20px;
+  color: var(--color);
+  font-weight: bolder;
+  font-family: var(--cool-font);
+  background: transparent;
+  outline: none;
+  border: 2px solid var(--color);
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+a {
+  color: var(--color);
+}

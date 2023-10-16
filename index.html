@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-image">
+        <div class="logo-info">
+          <img
+            src="https://maciejmroz2002.github.io/sign-up-form/logo-g8230969e6_640.png"
+            alt=""
+          />
+          <h1>Purpose</h1>
+        </div>
+        <h3>Photo from google.com</h3>
+      </div>
+
+      <div class="form-content">
+        <div class="form-disclaimer">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequuntur aut perspiciatis quam odit repudiandae at voluptatibus
+            quae ipsam fugit labore.
+          </p>
+          <br />
+          <p>Yu know you want to.</p>
+        </div>
+        <form action="" method="post" class="signup-form">
+          <div>
+            <h2>Let's do this!</h2>
+            <div class="fieldsets">
+              <fieldset class="fieldset">
+                <label for="first_name">First Name</label>
+                <input
+                  required
+                  min="3"
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  placeholder="First Name..."
+                />
+                <label for="last_name">Last Name</label>
+                <input
+                  type="text"
+                  type="text"
+                  name="last_name"
+                  min="3"
+                  id="last_name"
+                  required
+                />
+              </fieldset>
+              <fieldset class="fieldset">
+                <label for="email">Email</label>
+                <input required type="email" name="email" id="email" />
+                <label for="phone_number">Phone Number</label>
+                <input
+                  required
+                  type="number"
+                  name="phone_number"
+                  id="phone_number"
+                />
+              </fieldset>
+              <fieldset class="fieldset">
+                <label for="password">Password</label>
+                <input
+                  required
+                  min="5"
+                  type="password"
+                  name="password"
+                  id="password"
+                />
+              </fieldset>
+              <fieldset class="fieldset">
+                
+                <label for="confirm_password">Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirm_password"
+                  id="confirm_password"
+                  required
+                />
+              </fieldset>
+            </div>
+          </div>
+          <button class="create-account-btn" type="submit">Create Account</button>
+        </form>
+        <h2>Already have an account? <a href="">Log in</a></h2>
+      </div>
+    </div>
+  </body>
+</html>
